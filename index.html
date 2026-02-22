@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon UI Clone</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#e3e6e6;
+        }
+        header.navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            background-color:black;
+            color:white;
+            padding:10px 20px;
+        }
+        header span{
+            margin-right:20px;
+            cursor:pointer;
+        }
+        .brand-name{
+            font-weight:bold;
+            font-size:20px;
+        }
+        .banner img{
+            width:100%;
+        }
+        section{
+            display:grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-top:-200px;
+            padding:10px;
+        }
+        .card{
+            height:450px;
+            background-color:white;
+            box-shadow:2px 2px 2px rgba(19,16,16,0.5);
+            margin:20px;
+            padding:15px;
+        }
+        .row{
+            display:grid;
+            grid-template-columns:6fr 6fr;
+        }
+        .row div{
+            margin:5px;
+        }
+        .header{
+            font-size:20px;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+        .card img{
+            width:100%;
+        }
+        footer{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            background-color:black;
+            color:white;
+            padding:20px;
+            font-size:14px;
+        }
+
+        .footer_title{
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        footer span{
+            margin-right:10px;
+        }
+        @media (max-width: 1024px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        margin-top: -100px;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    header.navbar > div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 480px) {
+    header span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .brand-name {
+        font-size: 18px;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    footer div {
+        margin-bottom: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <span class="brand-name">Shopper.</span>
+        </div>
+        <div>
+            <span>Home</span>
+            <span>Catalogue</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </div>
+        <div>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="amazon.jpg" alt="Amazon Banner">
+    </div>
+    <section>
+        <div class="card">
+            <div class="header">Revamp Your Home in Style</div>
+            <div class="row">
+                <div>
+                    <img src="amazon1.png">
+                    <p>Cushion covers, bedsheets & more</p>
+                </div>
+                <div>
+                    <img src="amazon2.png">
+                    <p>Figurines, vases & more</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="amazon3.png">
+                    <p>Home Storage</p>
+                </div>
+                <div>
+                    <img src="amazon4.png">
+                    <p>Lighting solutions</p>
+                </div>
+            </div>
+        </div>
+            <div class="card">
+            <div class="header">Bulk Order Discounts + GST Savings</div>
+            <div class="row">
+                <div>
+                    <img src="amazon2.1.jpg">
+                    <p>Up to 45% off | Laptops</p>
+                </div>
+                <div>
+                    <img src="amazon2.2.jpg">
+                    <p>Up to 60% off | Kitchen appliances</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="amazon2.3.jpg">
+                    <p>Office furniture</p>
+                </div>
+                <div>
+                    <img src="amazon2.4.jpg">
+                    <p>Register using GST / Udyam</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">Appliances for Your Home</div>
+            <div class="row">
+                <div>
+                    <img src="amazon3.1.jpg">
+                    <p>Air Conditioners</p>
+                </div>
+                <div>
+                    <img src="amazon3.2.jpg">
+                    <p>Refrigerators</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="amazon3.3.jpg">
+                    <p>Microwaves</p>
+                </div>
+                <div>
+                    <img src="amazon3.4.jpg">
+                    <p>Washing Machines</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">Starting at ₹49 | Home Decor</div>
+            <div class="row">
+                <div>
+                    <img src="amazon4.1.jpg">
+                    <p>Cleaning Supplies</p>
+                </div>
+                <div>
+                    <img src="amazon4.2.jpg">
+                    <p>Bathroom Accessories</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="amazon4.3.jpg">
+                    <p>Home Storage</p>
+                </div>
+                <div>
+                    <img src="amazon4.4.jpg">
+                    <p>Wall Art & Decor</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            <div class="footer_title">Shopper</div>
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-youtube"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-instagram"></span>
+        </div>
+        <div>
+            <div class="footer_title">Support</div>
+            <div>Contact us</div>
+            <div>Size guide</div>
+            <div>Shipping & returns</div>
+        </div>
+        <div>
+            <div class="footer_title">Shop</div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>Kids</div>
+        </div>
+        <div>
+            <div class="footer_title">Company</div>
+            <div>Our story</div>
+            <div>Careers</div>
+            <div>Terms & conditions</div>
+            <div>Privacy policy</div>
+        </div>
+        <div>
+            <div class="footer_title">Contact</div>
+            <div>1-202-555-0105</div>
+            <div>1-202-555-0106</div>
+            <div>help@shopper.com</div>
+        </div>
+    </footer>
+</body>
+</html>
