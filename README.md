@@ -24,7 +24,7 @@ This project was built as part of my learning journey in front-end development a
 
 ## 📷 Screenshots
 
-![Homepage](screenshots/homepage.png)
-![Products Section](screenshots/products.png)
-![Footer](screenshots/footer.png)
+![Homepage](homepage.png)
+![Products Section](products.png)
+![Footer](footer.png)
 
