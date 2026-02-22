@@ -22,5 +22,9 @@ https://mepellireeta-wq.github.io/amazon-ui-clone/
 ##  Purpose
 This project was built as part of my learning journey in front-end development and UI design.
 
+## 📷 Screenshots
 
+![Homepage](screenshots/homepage.png)
+![Products Section](screenshots/products.png)
+![Footer](screenshots/footer.png)
 
